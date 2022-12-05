@@ -1,3 +1,13 @@
+############################
+# TOOLS AND LIBRARIES      #
+############################
+
+tools/msp430-gcc/
+
+############################
+# STANDARD C PROJECT FILES #
+############################
+
 # Prerequisites
 *.d
 
@@ -51,8 +61,13 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# CCS
-*.project
+# macos
+.DS_Store
 
-# osx
- .DS_Store
+# CCS
+.project
+
+# don't ignore .vscode as this file provides
+# useful tool usage examples and is convienient
+# for getting started quickly
+
