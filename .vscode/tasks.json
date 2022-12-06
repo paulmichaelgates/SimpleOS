@@ -6,7 +6,8 @@
         {
             "label": "GCC Build Image",
             "type": "shell",
-            "command": "make"
+            "command": "make",
+            "problemMatcher": []
         },
         {
             "label": "GCC Build Image Debug",

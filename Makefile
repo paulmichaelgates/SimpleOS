@@ -1,5 +1,5 @@
-OBJECTS=blink.o
-MAP=blink.map
+OBJECTS=temp.o
+MAP=temp.map
 MAKEFILE=Makefile
 
 ifeq ($(OS),Windows_NT)
