@@ -21,13 +21,13 @@ Development of the project is not IDE dependent, that being said there are two r
     .vscode and .code-workspace files configured for running these tasks given that the proper tools
     are setup in /tools (see info below about what needs to go in these directories)
     
-    [see](https://code.visualstudio.com/docs/editor/tasks for info about vscode tasks)
+    [see](https://code.visualstudio.com/docs/editor/tasks) for info about vscode tasks
 
 
 refer to MSP430 GCC User's Guide for more information on using CCS versus standalone MSP430-GCC, for new embedded
 software developers, I recommend using CCS since it will provide a nice GUI for tools used in the project.
 
-https://www.ti.com/lit/ug/slau646f/slau646f.pdf?ts=1670125317847&ref_url=https%253A%252F%252Fwww.google.com%252F 
+See [TI MSP440 GCC Tool Chain User's Guide](https://www.ti.com/lit/ug/slau646f/slau646f.pdf?ts=1670125317847&ref_url=https%253A%252F%252Fwww.google.com%252F) for more details
 
 
 # /tools Directory
