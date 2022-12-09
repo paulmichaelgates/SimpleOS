@@ -26,9 +26,11 @@ typedef struct
  Procedures
 ----------------------------------------*/
 
-/*
-    task_init.c
-*/
+/*---------------------------------------
+ task_init.c
+----------------------------------------*/
 err_t task_init();
+
+err_t task_bootup_sched();
 
 #endif /* TASK_SCHEDLUER_H */

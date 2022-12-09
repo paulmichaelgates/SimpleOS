@@ -16,9 +16,9 @@ typedef enum
 
 
 /* linked list */
-typedef struct 
+typedef struct list_struc
 {
-    list_t * next;
+    struct list_struc * next;
 
 }list_t;
 

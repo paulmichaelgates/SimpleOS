@@ -67,6 +67,9 @@ dkms.conf
 # CCS
 .project
 
+# vscode
+.editorconfig
+
 # don't ignore .vscode as this file provides
 # useful tool usage examples and is convienient
 # for getting started quickly
