@@ -21,7 +21,7 @@ Development of the project is not IDE dependent, that being said there are two r
     .vscode and .code-workspace files configured for running these tasks given that the proper tools
     are setup in /tools (see info below about what needs to go in these directories)
     
-    [see](https://code.visualstudio.com/docs/editor/tasks) for info about vscode tasks
+    go [here](https://code.visualstudio.com/docs/editor/tasks) for info about vscode tasks
 
 
 refer to MSP430 GCC User's Guide for more information on using CCS versus standalone MSP430-GCC, for new embedded
