@@ -8,7 +8,8 @@
                 "${workspaceFolder}/util",
                 "${workspaceFolder}/drivers/watchdog",
                 "${workspaceFolder}/task",
-                "${workspaceFolder}/io"
+                "${workspaceFolder}/io",
+                "${workspaceFolder}/debug"
             ],
             "compilerPath": "",
             "intelliSenseMode": "gcc-x64",

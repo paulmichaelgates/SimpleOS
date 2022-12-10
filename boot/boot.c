@@ -8,6 +8,12 @@
 #include "task_schedule.h"
 #include "io_intf.h"
 
+/*---------------------------------------
+ Procedures
+----------------------------------------*/
+
+static void enable_interrupts(void);
+
 /**
  * main.c
  */
@@ -21,6 +27,8 @@ int main(void)
 	
     io_bootup();
 
+    enable_interrupts();
+
     task_bootup_sched();
 
 	// main loop
@@ -29,9 +37,36 @@ int main(void)
 	return 0;
 }
 
-__attribute__((interrupt(TIMER0_B1_VECTOR)))
-void toggle_led(void){
-    P1OUT ^= BIT0;               // toggle led
-    TB0CTL &= ~TBIFG;            // clear ifg
+/*---------------------------------------
+ enable_interrupts()
+
+enable hardware interrupts
+----------------------------------------*/
+
+static void enable_interrupts(void)
+{
+	__enable_interrupt();        /* enable global interrupts */
+
+    TB0CTL &= ~TBIFG;            // clear ifg (recomended)
 }
+
+/* 
+    timer_intr_hndlr()
+
+    Description:
+    Main timer interrupt handler
+
+    Note:
+    At this time, the main job of this procedure
+    is to call the task scheduler
+*/
+__attribute__((interrupt(TIMER0_B1_VECTOR)))
+void timer_intr_hndlr(void){
+
+    /* call the task scheduler */
+    TSK_scheduler();
+
+}
+
+
 

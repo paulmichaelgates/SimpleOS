@@ -12,19 +12,24 @@ Description:   Provides defintions for the task scheduler
  Includes
 ----------------------------------------*/
 
-#include "utl_types.h"
+#include "utl_simple.h"
 
 /*---------------------------------------
  Types
 ----------------------------------------*/
 typedef struct
 {
-     void (*task_proc)(int);
-}task_def_t;
+     void (*task_proc)(void);
+}tcb_t;
 
 /*---------------------------------------
  Procedures
 ----------------------------------------*/
+
+/*---------------------------------------
+ task_schedule.c
+----------------------------------------*/
+void TSK_scheduler(void);
 
 /*---------------------------------------
  task_init.c
