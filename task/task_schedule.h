@@ -20,6 +20,8 @@ Description:   Provides defintions for the task scheduler
 typedef struct
 {
      void (*task_proc)(void);
+     const char * name;
+     uint16 * stack;
 }tcb_t;
 
 /*---------------------------------------
@@ -30,6 +32,7 @@ typedef struct
  task_schedule.c
 ----------------------------------------*/
 void TSK_scheduler(void);
+err_t task_add(tcb_t * tcb);
 
 /*---------------------------------------
  task_init.c

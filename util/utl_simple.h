@@ -15,8 +15,14 @@ utl_simple.h
  Project Wide Data Types
 ----------------------------------------*/
 
+/* uint 8 */
+typedef char uint8;
+
+/* uint 16 */
+typedef unsigned short uint16;
+
 /* boolean */
-typedef short unsigned int boolean;
+typedef unsigned short boolean;
 
 /* project err */
 typedef enum 

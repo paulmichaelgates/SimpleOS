@@ -50,23 +50,3 @@ static void enable_interrupts(void)
     TB0CTL &= ~TBIFG;            // clear ifg (recomended)
 }
 
-/* 
-    timer_intr_hndlr()
-
-    Description:
-    Main timer interrupt handler
-
-    Note:
-    At this time, the main job of this procedure
-    is to call the task scheduler
-*/
-__attribute__((interrupt(TIMER0_B1_VECTOR)))
-void timer_intr_hndlr(void){
-
-    /* call the task scheduler */
-    TSK_scheduler();
-
-}
-
-
-
