@@ -5,7 +5,11 @@
             "includePath": [
                 "${workspaceFolder}/",
                 "tools/msp430-gcc/include/",
-                "${workspaceFolder}/util"
+                "${workspaceFolder}/util",
+                "${workspaceFolder}/drivers/watchdog",
+                "${workspaceFolder}/task",
+                "${workspaceFolder}/io",
+                "${workspaceFolder}/debug"
             ],
             "compilerPath": "",
             "intelliSenseMode": "gcc-x64",

@@ -5,6 +5,12 @@
 		}
 	],
 	"settings": {
+		"files.associations": {
+			"utl_types.h": "c",
+			"msp430.h": "c",
+			"msp430fr2355.h": "c",
+			"utl_simple.h": "c"
+		}
 		
 	},
 	"extensions": {
