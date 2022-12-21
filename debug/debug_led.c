@@ -18,5 +18,4 @@
 void toggle_led()
 {
     P1OUT ^= BIT0;               // toggle led
-    TB0CTL &= ~TBIFG;            // clear ifg
 }

@@ -16,7 +16,17 @@ utl_simple.h
 ----------------------------------------*/
 
 /* boolean */
-typedef short unsigned int boolean;
+typedef short unsigned boolean;
+
+/* uint16 */
+typedef short unsigned uint16_t;
+
+/* uint8 */
+typedef unsigned char uint8_t;
+
+
+/* uint32 */
+typedef unsigned int uint32_t;
 
 /* project err */
 typedef enum 
