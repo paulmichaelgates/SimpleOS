@@ -1,4 +1,4 @@
-OBJECTS=task/* util/* boot/* drivers/watchdog/* io/* debug/*
+OBJECTS= util/* boot/* drivers/watchdog/* io/* debug/*
 MAP=temp.map
 MAKEFILE=Makefile
 
@@ -22,12 +22,11 @@ GDB     = $(GCC_DIR)/msp430-elf-gdb
 
 # modules
 UTIL 	= util
-TASK 	= task
 WDG		= drivers/watchdog
 IO		= io
 DEBUG 	= debug
 
-CFLAGS = -I $(SUPPORT_FILE_DIRECTORY) -I $(UTIL) -I $(TASK) -I $(WDG) -I $(IO) -I $(DEBUG) -mmcu=$(DEVICE) -Og -Wall -g
+CFLAGS = -I $(SUPPORT_FILE_DIRECTORY) -I $(UTIL) -I $(WDG) -I $(IO) -I $(DEBUG) -mmcu=$(DEVICE) -Og -Wall -g
 LFLAGS = -L $(SUPPORT_FILE_DIRECTORY) -Wl,-Map,$(MAP),--gc-sections 
 
 all: ${OBJECTS}

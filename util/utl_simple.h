@@ -9,7 +9,14 @@ utl_simple.h
 /*---------------------------------------
  Literal constants
 ----------------------------------------*/
-#define NULL 0
+#define NULL   ( 0 )
+#define TRUE   ( 1 )
+#define FALSE  ( 0 )
+
+/*---------------------------------------
+ macros
+----------------------------------------*/
+#define cnt_of_arr( x )  ( sizeof( x ) / sizeof(( x )[ 0 ] ) )
 
 /*---------------------------------------
  Project Wide Data Types

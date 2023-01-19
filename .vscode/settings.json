@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "msp430.h": "c",
+        "watchdog_intf.h": "c",
+        "io_intf.h": "c",
+        "utl_simple.h": "c",
+        "shared_mutex": "c",
+        "task_schedule.h": "c",
+        "task_pub.h": "c",
+        "thread": "c"
+    }
+}

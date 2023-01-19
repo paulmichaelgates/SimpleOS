@@ -19,9 +19,9 @@ Description:   Provides defintions for the task scheduler
 ----------------------------------------*/
 typedef struct
 {
-     void (*task_proc)(void);
+     void ( * task_proc )( void );
 }tcb_t;
-
+ 
 /*---------------------------------------
  Procedures
 ----------------------------------------*/
@@ -29,7 +29,18 @@ typedef struct
 /*---------------------------------------
  task_schedule.c
 ----------------------------------------*/
-void TSK_scheduler(void);
+void TSK_scheduler
+     (
+     void
+     );
+
+/*---------------------------------------
+ task_init.c
+----------------------------------------*/
+tcb_t * TSK_get_current
+     (
+     void
+     );
 
 /*---------------------------------------
  task_init.c
